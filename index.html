@@ -1,8 +1,16 @@
 <style>
-    a{
+    @media and (max-width: 600px) {
+        .main {
+            min-height: 950px;
+            max-height: 1100px;
+        }
+    }
+
+    a {
         color: black;
         font-weight: 600;
     }
+
     body {
         background-color: #08749c;
     }
@@ -57,7 +65,7 @@
         border-radius: 5px;
         max-width: 600px;
         margin: auto;
-        margin-top: 1rem!important;
+        margin-top: 1rem !important;
         padding-top: 5px;
         padding-bottom: 5px;
         top: 50px;
@@ -65,7 +73,7 @@
         left: 0;
         right: 0;
         position: absolute;
-        line-height: 2 ;
+        line-height: 2;
         /*   z-index: 1; */
         animation: bounce 1.5s infinite;
         overflow: hidden;
@@ -96,19 +104,20 @@
         line-height: 1.5;
     }
 
-    .terTitle{
+    .terTitle {
         color: rgb(139, 139, 139);
         line-height: 1.5;
         font-size: 28px;
         text-align: center;
     }
 
-    .quaTitle{
+    .quaTitle {
         color: rgb(139, 139, 139);
         line-height: 1.5;
-        text-align: center!important;
+        text-align: center !important;
     }
-    .cinTitle{
+
+    .cinTitle {
         color: rgb(0, 0, 0);
         text-align: center;
         font-size: 14px;
@@ -190,7 +199,8 @@
         z-index: -1;
         box-sizing: border-box;
     }
-    .imgContainer{
+
+    .imgContainer {
         float: left;
         clear: none;
         margin-left: 1rem;
@@ -205,8 +215,6 @@
             transform: translate(0, 0px);
         }
     }
-
-
 </style>
 
 <!DOCTYPE html>
@@ -230,14 +238,20 @@
                 </div>
             </div>
             <div class="pageTitle title">¡Hola {prenom}!</div>
-            <div class="secondaryTitle title">Buena noticia: ¡Tu pedido {ref-interne} ha salido de nuestro almacén! Según lo previsto, llegará el:</div><br>
+            <div class="secondaryTitle title">Buena noticia: ¡Tu pedido {ref-interne} ha salido de nuestro almacén!
+                Según lo previsto, llegará el:</div><br>
             <div class="terTitle title">{date_prev_livraison}</div>
             <div class="quaTitle title">Será entregado por {transporteur}</div><br>
             <div class="secondaryTitle title">Puedes ver el estado del envío en tiempo real:</div><br>
             <button class="submit mainEntry" onclick="thanks()">SEGUIMIENTO DEL PEDIDO</button>
-            <div class="cinTitle title"><div class="imgContainer"><img src="images\material-symbols_headset-mic-outline.png"></div><div>¿Necesitas ayuda? Contacta con nosotros en el siguiente <a href="#">enlace</a>.</div></div><br>
-            <div class="quaTitle title" style="text-align: left;">Este email se ha generado automáticamente. Por favor, no conteste.
-                <br><span style="color: black; font-weight: 600;">Skinceuticals.</span></div><br>
+            <div class="cinTitle title">
+                <div class="imgContainer"><img src="images\material-symbols_headset-mic-outline.png"></div>
+                <div>¿Necesitas ayuda? Contacta con nosotros en el siguiente <a href="#">enlace</a>.</div>
+            </div><br>
+            <div class="quaTitle title" style="text-align: left;">Este email se ha generado automáticamente. Por favor,
+                no conteste.
+                <br><span style="color: black; font-weight: 600;">Skinceuticals.</span>
+            </div><br>
             <div class="bannerSection">
                 <img style="width: 100%; height: 100%; object-fit: cover; border-radius: 0 0 5px 5px!important"
                     src="images\Rectangle 3119.png">
