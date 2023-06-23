@@ -50,12 +50,12 @@
 
     /* main animation starts */
     .main {
-        min-height: 1050px;
+        min-height: 950px;
+        max-height: 951px;
         background: #fff;
         box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
         border-radius: 5px;
         max-width: 600px;
-        max-height: 2000px;
         margin: auto;
         margin-top: 1rem!important;
         padding-top: 5px;
@@ -106,12 +106,13 @@
     .quaTitle{
         color: rgb(139, 139, 139);
         line-height: 1.5;
-        text-align: center;
+        text-align: center!important;
     }
     .cinTitle{
         color: rgb(0, 0, 0);
         text-align: center;
         font-size: 14px;
+        margin-left: 60px;
     }
 
     .name {
@@ -197,13 +198,15 @@
 
     @keyframes bounce {
         0% {
-            transform: translate(0, 4px);
+            transform: translate(0, 0px);
         }
 
         50% {
-            transform: translate(0, 8px);
+            transform: translate(0, 0px);
         }
     }
+
+
 </style>
 
 <!DOCTYPE html>
@@ -229,7 +232,7 @@
             <div class="pageTitle title">¡Hola {prenom}!</div>
             <div class="secondaryTitle title">Buena noticia: ¡Tu pedido {ref-interne} ha salido de nuestro almacén! Según lo previsto, llegará el:</div><br>
             <div class="terTitle title">{date_prev_livraison}</div>
-            <div class="quaTitle title">entregado por {transporteur}</div><br>
+            <div class="quaTitle title">Será entregado por {transporteur}</div><br>
             <div class="secondaryTitle title">Puedes ver el estado del envío en tiempo real:</div><br>
             <button class="submit mainEntry" onclick="thanks()">SEGUIMIENTO DEL PEDIDO</button>
             <div class="cinTitle title"><div class="imgContainer"><img src="images\material-symbols_headset-mic-outline.png"></div><div>¿Necesitas ayuda? Contacta con nosotros en el siguiente <a href="#">enlace</a>.</div></div><br>
